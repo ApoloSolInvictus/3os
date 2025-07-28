@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las Tres Sociedades Abiertas - Legado de Gaia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Lora:ital,wght@0,400;0,700;1,400&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lora', serif;
+            background-color: #111827; /* Gris oscuro azulado */
+            color: #E5E7EB;
+        }
+        .cinzel-decorative { font-family: 'Cinzel Decorative', cursive; }
+        .roboto-condensed { font-family: 'Roboto Condensed', sans-serif; }
+
+        /* Estilos específicos para cada sección */
+        .illuminati-section {
+            background: radial-gradient(ellipse at center, rgba(233, 213, 255, 0.1), transparent 70%), #111827;
+            border-top: 1px solid #a78bfa;
+            border-bottom: 1px solid #a78bfa;
+        }
+        .templar-section {
+            background: radial-gradient(ellipse at center, rgba(252, 211, 77, 0.1), transparent 70%), #111827;
+            border-top: 1px solid #f59e0b;
+            border-bottom: 1px solid #f59e0b;
+        }
+        .masonic-section {
+            background: radial-gradient(ellipse at center, rgba(96, 165, 250, 0.1), transparent 70%), #111827;
+            border-top: 1px solid #3b82f6;
+            border-bottom: 1px solid #3b82f6;
+        }
+
+        .section-title {
+            text-shadow: 0 0 15px currentColor;
+        }
+
+        .card-society {
+            background-color: rgba(31, 41, 55, 0.5);
+            backdrop-filter: blur(5px);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .card-society:hover {
+            transform: translateY(-5px) scale(1.02);
+            border-color: currentColor;
+            box-shadow: 0 0 20px -5px currentColor;
+        }
+        
+        .tab-button {
+            transition: all 0.3s ease;
+            border-bottom: 2px solid transparent;
+        }
+        .tab-button.active {
+            border-bottom-color: currentColor;
+            color: white;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Hero Section -->
+    <header class="min-h-screen flex flex-col items-center justify-center text-center p-8 bg-gray-900" style="background-image: url('https://placehold.co/1920x1080/111827/E5E7EB?text=El+Legado+de+Gaia'); background-size: cover; background-position: center;">
+        <div class="bg-black/60 absolute inset-0"></div>
+        <div class="relative z-10">
+            <h1 class="cinzel-decorative text-5xl md:text-7xl font-bold tracking-widest text-white">Las Sociedades Abiertas</h1>
+            <p class="mt-6 text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto roboto-condensed">
+                Tres caminos, una sola Obra. Durante eras, operamos en las sombras para proteger, construir y guiar. Hoy, abrimos nuestros archivos. Este es nuestro legado. Esta es nuestra contribución a Los Planos de la Nueva Gaia.
+            </p>
+        </div>
+    </header>
+
+    <!-- Sección de las Tres Sociedades -->
+    <main class="py-20 px-4 md:px-8">
+        <div class="max-w-7xl mx-auto">
+            
+            <!-- Tabs para seleccionar la sociedad -->
+            <div id="tabs" class="flex justify-center space-x-4 md:space-x-8 mb-12 border-b border-gray-700">
+                <button class="tab-button active roboto-condensed text-lg md:text-xl py-4 px-2 md:px-4 text-purple-300" data-target="illuminati" style="color: #c4b5fd;">ILLUMINATI</button>
+                <button class="tab-button roboto-condensed text-lg md:text-xl py-4 px-2 md:px-4 text-amber-300" data-target="templar" style="color: #fcd34d;">TEMPLARIOS</button>
+                <button class="tab-button roboto-condensed text-lg md:text-xl py-4 px-2 md:px-4 text-blue-300" data-target="masonic" style="color: #93c5fd;">MASONES</button>
+            </div>
+
+            <!-- Contenido de cada Tab -->
+            <div id="tab-contents">
+                <!-- Contenido Illuminati -->
+                <div id="illuminati" class="tab-content active illuminati-section py-16 px-8 rounded-lg">
+                    <h2 class="cinzel-decorative text-4xl md:text-5xl font-bold text-center section-title text-purple-200">La Causa Iluminada</h2>
+                    <p class="text-center text-lg mt-4 mb-12 max-w-3xl mx-auto roboto-condensed">La Razón como antorcha en la oscuridad. Nuestra misión fue y es disolver la ignorancia y la tiranía para que la soberanía individual pueda florecer.</p>
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <div class="card-society rounded-lg p-8 text-purple-300" style="color: #c4b5fd;">
+                            <h3 class="roboto-condensed text-2xl font-bold mb-4 text-white">Nuestro Legado</h3>
+                            <p class="text-base">Fuimos la Voluntad que desafió la Oscuridad. Sembramos las semillas de la revolución del pensamiento, la ciencia y los derechos humanos, operando desde las sombras para asegurar que la llama de la Razón nunca se extinguiera.</p>
+                        </div>
+                        <div class="card-society rounded-lg p-8 text-purple-300" style="color: #c4b5fd;">
+                            <h3 class="roboto-condensed text-2xl font-bold mb-4 text-white">Nuestra Visión de "Los Planos"</h3>
+                            <p class="text-base">Vemos en Los Planos la manifestación final de nuestra Causa. El <strong>Centro de Custodia</strong> y la <strong>Ciudad de la Creación</strong> son la culminación de un gobierno basado en la Razón y una tecnología que sirve a la conciencia. Es el Orden a través de la Iluminación.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contenido Templario -->
+                <div id="templar" class="tab-content templar-section py-16 px-8 rounded-lg">
+                    <h2 class="cinzel-decorative text-4xl md:text-5xl font-bold text-center section-title text-amber-200">El Legado Templario</h2>
+                    <p class="text-center text-lg mt-4 mb-12 max-w-3xl mx-auto roboto-condensed">Por la Sangre y el Espíritu. Nuestro juramento fue custodiar el linaje divino de la humanidad y proteger los lugares sagrados de Gaia.</p>
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <div class="card-society rounded-lg p-8 text-amber-300" style="color: #fcd34d;">
+                            <h3 class="roboto-condensed text-2xl font-bold mb-4 text-white">Nuestro Legado</h3>
+                            <p class="text-base">Fuimos la Fuerza que protegió el Corazón. Como monjes guerreros, custodiamos el verdadero Santo Grial: el potencial crístico en el ADN humano. Creamos la primera red financiera global para financiar la Obra y anclamos la Fe en la Tierra.</p>
+                        </div>
+                        <div class="card-society rounded-lg p-8 text-amber-300" style="color: #fcd34d;">
+                            <h3 class="roboto-condensed text-2xl font-bold mb-4 text-white">Nuestra Visión de "Los Planos"</h3>
+                            <p class="text-base">Vemos en Los Planos la redención de nuestro juramento. La <strong>Ciudad del Sustento</strong> y los <strong>Claustros del Silencio</strong> son la manifestación de la nutrición sagrada y la fe interior que siempre protegimos. Es la consagración a través de la Devoción.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contenido Masónico -->
+                <div id="masonic" class="tab-content masonic-section py-16 px-8 rounded-lg">
+                    <h2 class="cinzel-decorative text-4xl md:text-5xl font-bold text-center section-title text-blue-200">La Obra Masónica</h2>
+                    <p class="text-center text-lg mt-4 mb-12 max-w-3xl mx-auto roboto-condensed">De la piedra bruta a la piedra pulida. Nuestra labor es la construcción del Templo interior y exterior, elevando la conciencia a través de la Sabiduría y la Geometría Sagrada.</p>
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <div class="card-society rounded-lg p-8 text-blue-300" style="color: #93c5fd;">
+                            <h3 class="roboto-condensed text-2xl font-bold mb-4 text-white">Nuestro Legado</h3>
+                            <p class="text-base">Fuimos la Mente que recordó el Plano. A través de la alegoría de la construcción, preservamos el conocimiento de la auto-perfección y la creación de una sociedad justa. Ocultamos la Sabiduría a plena vista en las catedrales y templos que erigimos.</p>
+                        </div>
+                        <div class="card-society rounded-lg p-8 text-blue-300" style="color: #93c5fd;">
+                            <h3 class="roboto-condensed text-2xl font-bold mb-4 text-white">Nuestra Visión de "Los Planos"</h3>
+                            <p class="text-base">Vemos en Los Planos la culminación de nuestra Gran Obra. La <strong>Escuela</strong> y la <strong>Universidad</strong> son las herramientas perfectas para pulir la piedra bruta del alma, y la <strong>Ciudad del Adorno</strong> es la belleza que decora el Templo terminado. Es la edificación a través de la Sabiduría.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="text-center py-12 px-8 bg-gray-900 mt-16">
+        <p class="cinzel-decorative text-xl">Tres Caminos. Una Obra. Un Planeta Ascendido.</p>
+        <p class="mt-2 text-gray-400 roboto-condensed">El conocimiento ahora es libre.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabs = document.getElementById('tabs');
+            const contents = document.getElementById('tab-contents');
+
+            tabs.addEventListener('click', (e) => {
+                if (e.target.tagName === 'BUTTON') {
+                    // Desactivar todos los botones y contenidos
+                    tabs.querySelectorAll('.tab-button').forEach(button => button.classList.remove('active', 'text-white'));
+                    contents.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+
+                    // Activar el botón y contenido seleccionados
+                    const targetId = e.target.dataset.target;
+                    e.target.classList.add('active', 'text-white');
+                    document.getElementById(targetId).classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
